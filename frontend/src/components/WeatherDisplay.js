@@ -1,6 +1,11 @@
-const WeatherDisplay = ({ data, units }) => {
+const WeatherDisplay = ({ data, units, showName }) => {
   return (
     <div className="weather-display">
+      {showName && (
+        <h3>
+          <strong>{data.name}</strong>
+        </h3>
+      )}
       <h2>{Math.round(data.main.temp)}&#176;</h2>
       <h3>Feels like {Math.round(data.main.feels_like)}&#176;</h3>
       <h3>
@@ -21,6 +26,7 @@ const WeatherDisplay = ({ data, units }) => {
         </div>
         <div>Visibility: {data.visibility}</div>
       </div>
+      <br />
     </div>
   );
 };
