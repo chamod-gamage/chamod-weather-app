@@ -6,7 +6,6 @@ import { searchCities } from '../api/city';
 const CitySelector = ({ onSelect }) => {
   const [city, setCity] = useState('');
   const [options, setOptions] = useState([]);
-  const [isLoading, setIsLoading] = useState(false);
   const [search, setSearch] = useState('');
 
   const handleSearch = async () => {
