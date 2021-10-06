@@ -22,6 +22,11 @@ const CitySelector = ({ onSelect }) => {
         <InputBase
           placeholder="Search for a city"
           onChange={(e) => setSearch(e.target.value)}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter') {
+              handleSearch();
+            }
+          }}
         />
         <IconButton type="submit" sx={{ p: '10px' }} aria-label="search">
           <SearchIcon onClick={handleSearch} />
