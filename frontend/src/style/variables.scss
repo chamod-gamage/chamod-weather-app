@@ -4,6 +4,11 @@ $light-background: linear-gradient(
   rgba(0, 212, 255, 1) 53%,
   rgba(145, 218, 255, 1) 100%
 );
+$cloudy-background: linear-gradient(
+  0deg,
+  rgba(223, 196, 208, 1) 0%,
+  rgba(148, 187, 233, 1) 100%
+);
 $dark-background: linear-gradient(
   0deg,
   rgba(15, 32, 39, 1) 0%,
